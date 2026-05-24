@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/abconcordiagit/restAPIplaywrightTest/issues"
   },
-  "homepage": "https://github.com/abconcordiagit/restAPIplaywrightTest#readme"
+  "homepage": "https://github.com/abconcordiagit/restAPIplaywrightTest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0"
+  }
 }
