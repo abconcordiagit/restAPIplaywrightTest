@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "We will do rest API test",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abconcordiagit/restAPIplaywrightTest.git"
@@ -15,9 +17,5 @@
   "bugs": {
     "url": "https://github.com/abconcordiagit/restAPIplaywrightTest/issues"
   },
-  "homepage": "https://github.com/abconcordiagit/restAPIplaywrightTest#readme",
-  "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
-  }
+  "homepage": "https://github.com/abconcordiagit/restAPIplaywrightTest#readme"
 }
