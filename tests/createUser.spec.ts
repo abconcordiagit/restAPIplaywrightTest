@@ -1,9 +1,12 @@
 import { test, expect } from '@playwright/test';
 import { ApiClient } from '../utils/apiClient';
-import { headers } from '../utils/headers';
+import { getHeaders } from '../utils/headers';
 import userData from '../test-data/users.json';
 
 test('Create User API Test', async ({ request }) => {
+
+  // 🔍 Debug: verify token is coming from GitHub Actions
+  console.log("TOKEN LENGTH =", process.env.GOREST_TOKEN?.length);
 
   const body = {
     ...userData.createUser,
@@ -13,16 +16,19 @@ test('Create User API Test', async ({ request }) => {
   const response = await ApiClient.post(
     request,
     'https://gorest.co.in/public/v2/users',
-    headers,
+    getHeaders(),
     body
   );
 
+  // 🔥 Status validation
   expect(response.status()).toBe(201);
 
   const responseBody = await response.json();
 
+  // 🔥 Response validation
   expect(responseBody.name).toBe(body.name);
   expect(responseBody.email).toBe(body.email);
 
-  console.log(responseBody);
+  // 🔍 Debug response (safe)
+  console.log("Created User ID =", responseBody.id);
 });
