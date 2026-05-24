@@ -41,7 +41,7 @@ jobs:
       # Run Playwright API Tests
       - name: Run API Tests
         #run: npx playwright test
-        run: npx playwright test tests/simpleGet.spec.ts
+        run: npx playwright test tests/jsonplaceholderGet.spec.ts
         env:
           GOREST_TOKEN: ${{ secrets.GOREST_TOKEN }}
 
