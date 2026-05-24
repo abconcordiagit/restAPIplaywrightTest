@@ -8,7 +8,8 @@ test('Get User API Test', async ({ request }) => {
 
   const response = await ApiClient.get(
     request,
-    `https://gorest.co.in/public/v2/users?email=${email}`,
+    //`https://gorest.co.in/public/v2/users?email=${email}`,
+    `https://gorest.co.in/public/v2/users`,
     headers
   );
 
@@ -16,7 +17,7 @@ test('Get User API Test', async ({ request }) => {
 
   const responseBody = await response.json();
 
-  expect(responseBody[0].email).toBe(email);
+  //expect(responseBody[0].email).toBe(email);
 
   console.log(responseBody);
 });

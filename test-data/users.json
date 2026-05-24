@@ -1,13 +1,13 @@
 {
   "createUser": {
-    "name": "Blex Mercer",
+    "name": "Clex Mercer",
     "gender": "male",
-    "email": "alex.mercer.unique1@example.com",
+    "email": "alex.mercer.unique5@example.com",
     "status": "active"
   },
 
   "updateUser": {
-    "name": "Alex Mercer Updated",
+    "name": "Clex Mercer Updated",
     "email": "alex.updated.unique1@example.com",
     "status": "active"
   }

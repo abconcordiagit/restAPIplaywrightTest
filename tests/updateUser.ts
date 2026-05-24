@@ -6,7 +6,7 @@ import userData from '../test-data/users.json';
 test('Update User API Test', async ({ request }) => {
 
   // Existing user ID
-  const userId = 123456;
+  const userId = 8476879;
 
   const response = await ApiClient.put(
     request,
